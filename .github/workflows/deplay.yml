@@ -21,13 +21,13 @@ jobs:
     - name: Deploy GitHub Pages
       run: |
         mdbook build
-        git worktree add gh-pages gh-pages
+        git worktree add book gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
-        cd gh-pages
+        cd book
         git update-ref -d refs/heads/gh-pages
         rm -rf *
-        mv ../book/* .
+        mv book/* .
         git add .
         git commit -m "Deploy $GITHUB_SHA to gh-pages"
         git push --force
