@@ -8,12 +8,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Install mdbook
+    - uses: actions/checkout@master
+    - name: update rustup
+      run: rustup self update
+    - name: install rust
       run: |
-        cargo install mdbook --no-default-features --features search --vers "^0.4" --locked
+        rustup set profile minimal
+        rustup toolchain install stable
+        rustup override set stable
+    - name: install mdbook
+      run: cargo install mdbook --no-default-features --features search --vers "^0.4" --locked
     - name: Deploy GitHub Pages
       run: |
         mdbook build
