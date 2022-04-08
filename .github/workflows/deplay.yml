@@ -1,4 +1,4 @@
-name: Deploy
+name: github pages
 on:
   push:
     branches:
@@ -7,27 +7,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-    - uses: actions/checkout@master
-    - name: update rustup
-      run: rustup self update
-    - name: install rust
-      run: |
-        rustup set profile minimal
-        rustup toolchain install stable
-        rustup override set stable
-    - name: install mdbook
-      run: cargo install mdbook --no-default-features --features search --vers "^0.4" --locked
-    - name: Deploy GitHub Pages
-      run: |
-        mdbook build
-        git worktree add book gh-pages
-        git config user.name "Deploy from CI"
-        git config user.email ""
-        cd book
-        git update-ref -d refs/heads/gh-pages
-        rm -rf *
-        mv book/* .
-        git add .
-        git commit -m "Deploy $GITHUB_SHA to gh-pages"
-        git push --force
+      - uses: actions/checkout@master
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: 'latest'
+
+      - run: mdbook build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@master
+        if: ${{ github.ref == 'refs/heads/main' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book
