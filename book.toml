@@ -7,3 +7,4 @@ title = "A book about stuff."
 
 [output.html]
 additional-css = ["assets/style.css"]
+mathjax-support = true
