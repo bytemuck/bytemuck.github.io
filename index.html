@@ -26,6 +26,8 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="assets/style.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -76,7 +78,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="blog0.html"><strong aria-hidden="true">1.</strong> A new technology [4/8/2022]</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="blog0.html" class="active"><strong aria-hidden="true">1.</strong> A new technology [4/8/2022]</a></li><li class="chapter-item expanded "><a href="memory_helpers.html"><strong aria-hidden="true">2.</strong> Memory Helpers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="memory_helpers/maths.html"><strong aria-hidden="true">2.1.</strong> Maths [07/09/2022]</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -146,12 +148,18 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="next" href="memory_helpers.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="next" href="memory_helpers.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>

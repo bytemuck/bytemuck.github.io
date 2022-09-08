@@ -27,6 +27,8 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="assets/style.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -77,7 +79,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="blog0.html"><strong aria-hidden="true">1.</strong> A new technology [4/8/2022]</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="blog0.html"><strong aria-hidden="true">1.</strong> A new technology [4/8/2022]</a></li><li class="chapter-item expanded "><a href="memory_helpers.html"><strong aria-hidden="true">2.</strong> Memory Helpers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="memory_helpers/maths.html"><strong aria-hidden="true">2.1.</strong> Maths [07/09/2022]</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -142,6 +144,67 @@
 <p>Additionally, Unreal Engine offers a new way to create games, or at least a faster way to create video games. As I mentioned already, it comes with the possibility to use a very large amount of data (triangles) at the same time and this comes with a new way to create assets and resources for a game. In fact, we can directly use objects we found outside, and scan them. Even if the resolution is very precise, Unreal will go through the data as if it was its favourite meal. Before this next-gen technology, we had to create many models of the same object, with less and less resolution as it is further from the camera (the point where we see the scene) and it was very slow. But now, we don't have to do it, Unreal do it for us. For this reason, it's easy to create very spectacular scenes where we can make our character move, shoot, jump, etc. In brief, Unreal's new technology makes the task easier for artists to create scenes, letting them focus on their environment rather than on the five or six models of the same tree, for example.</p>
 <p>In the same way, the engine can be used as an animator to create either movies, short films or even cut scenes. Many films are already being talked about, like 'The Matrix Awakens', a movie entirely made inside of unreal engine. The character's movements were filmed with special equipment and transposed in the engine, and there bodies scanned as mentioned in the previous paragraph. The difference with old technology is that we have the actual model of the comedian, and we can put it as if we were making a video game. It offers a way to have real light reflection with the environment in real time. The comedian is literally in the environment. The old way was just an image behind the comedian, which is the reason why it cost a ton of money, we had to put a lot of effort into lighting, shadows, effects, etc. To wrap it up, this technology helps us produce very complicated scenes in a more elegant way by dropping a model of a comedian inside the engine.</p>
 <p>In conclusion, this software offers us great way to visualize anything: cars, houses, cities, name it. Moreover, it allows us to create video games that look almost identical to the outside, or even make movies out of any scene we can imagine.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="memory-helpers"><a class="header" href="#memory-helpers">Memory Helpers</a></h1>
+<ul>
+<li><a href="./memory_helpers/maths.html">Maths [07/09/2022]</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><p>Égalité entre deux vecteurs (principe de translation): 
+\[ \overrightarrow u = \overrightarrow v \iff \Vert \overrightarrow u \Vert = \Vert \overrightarrow v \Vert \]</p>
+<p>Forme polaire: 
+\[ \overrightarrow u = \Vert \overrightarrow u \Vert,\theta_\overrightarrow u \]</p>
+<p>Forme matricielle (ou algébrique): 
+\[ \overrightarrow u = [\begin{array}{rr}u_x &amp; u_y\end{array}] \]</p>
+<p>Passer de la forme matricielle à la forme polaire: 
+\[ \Vert \overrightarrow u \Vert = \sqrt{u_x^2 + u_y^2} \]
+\[ \theta_\overrightarrow u = \begin{cases} \arctan\frac{u_y}{u_x} + \phi &amp; \text{si }  u_x \neq 0 
+\\ \frac{\pi}{2} \text{ ou } 90^\circ &amp; \text{si } u_x = 0 \text{ et } u_y \gt 0
+\\ \frac{3\pi}{2} \text{ ou } 270^\circ &amp; \text{si } u_x = 0 \text{ et } u_y \lt 0 
+\end{cases}\]</p>
+<p>Passer de la forme polaire à la forme matricielle: 
+\[ u_x = \Vert \overrightarrow u \Vert \times \cos \theta_\overrightarrow u \]
+\[ u_y = \Vert \overrightarrow u \Vert \times \sin \theta_\overrightarrow u \]</p>
+<p>Opérations sur les vecteurs:</p>
+<ul>
+<li>
+<p>Propriétés de l'addition dans les \( \mathbb{R},+ \)
+\[ \begin{array}{rr} 
+x + y \in \mathbb{R}        &amp; \text{fermeture}
+\\ x + y = y + x               &amp; \text{commutativité}
+\\ x + (y + z) = (x + y) + z   &amp; \text{associativité}
+\\ x + 0 = x                   &amp; \text{0 est l'élément neutre}
+\\ x + (-x) = 0                &amp; -x \text{ est l'inverse additif} \end{array}
+\]</p>
+</li>
+<li>
+<p>Propriétés de la multiplication dans les \( \mathbb{R},\cdot \ \)
+\[ \begin{array}{rr} 
+x \cdot y \in \mathbb{R}                    &amp; \text{fermeture}
+\\ x \cdot y = y \cdot x                       &amp; \text{commutativité}
+\\ x \cdot (y \cdot z) = (x \cdot y) \cdot z   &amp; \text{associativité}
+\\ x \cdot 1 = x                               &amp; \text{1 est l'élément neutre}
+\\ \vee x \in \mathbb{R^*}, x \cdot (\frac{1}{x}) = 1                                &amp; \frac{1}{x} \text{ est l'inverse multiplicatif si } x \neq 0 \end{array}
+\]</p>
+</li>
+<li>
+<p>Autres propriétés dans les \( \mathbb{R},+,\cdot \ \)
+\[ \begin{array}{rr} 
+x \cdot 0 = 0                               &amp; \text{0 est l'élément absorbant}
+\\ x \cdot (y + z) = x \cdot y + x \cdot z     &amp; \text{distributativité de la multiplication sur l'addition} \end{array}
+\]</p>
+</li>
+</ul>
+<p>Addition et soustraction algébrique (avec composantes): <br />
+\[\text{Soit} \overrightarrow v = [\begin{array}{rr}v_x &amp; v_y\end{array}] \text{ et} \overrightarrow u = [\begin{array}{rr}u_x &amp; u_y\end{array}], \text{ alors} \] \[ \overrightarrow v \pm \overrightarrow v = [\begin{array}{rr}v_x \pm u_x &amp; v_y \pm u_y\end{array}] \]</p>
+<ul>
+<li>Propriétés de l'addition sur \( \mathbb{R^2},+ \ \)
+\[ \begin{array}{rr} 
+\overrightarrow u + \overrightarrow v \text{ est un vecteur}                                                                &amp; \text{fermeture}
+\\ \overrightarrow u + \overrightarrow v = \overrightarrow v + \overrightarrow u                                               &amp; \text{commutativité de + dans } \mathbb{R^2}
+\\ \overrightarrow u + (\overrightarrow v + \overrightarrow w) = (\overrightarrow u + \overrightarrow v) + \overrightarrow w   &amp; \text{associativité de + dans } \mathbb{R^2}
+\\ \overrightarrow u + \overrightarrow 0 = \overrightarrow 0 + \overrightarrow u = \overrightarrow u                           &amp; \overrightarrow 0 \text{ est élément neutre de +}
+\\ \overrightarrow u + (-\overrightarrow u)                                                                                   &amp; \text{inverse additif, } -\overrightarrow u \end{array}
+\]</li>
+</ul>
 
                     </main>
 
@@ -170,7 +233,9 @@
         <!-- Custom JS scripts -->
         <script type="text/javascript">
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
     </body>
