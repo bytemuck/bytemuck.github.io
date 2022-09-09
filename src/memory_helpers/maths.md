@@ -127,4 +127,4 @@ La projection orthogonale \\( \overrightarrow u_\overrightarrow v \\) est l'ombr
 
 **Barycentre**
 Le point \\( P \\) est le barycentre d'un ensemble de \\( n \\) points \\( P_1,P_2,...,P_n \\) si
-\\[ \overrightarrow PP_1 + \overrightarrow PP_2 + ... + \overrightarrow PP_n = \overrightarrow 0 \\]
+\\[ \overrightarrow {PP_1} + \overrightarrow {PP_2} + ... + \overrightarrow {PP_n} = \overrightarrow 0 \\]
