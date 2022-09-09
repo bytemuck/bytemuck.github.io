@@ -137,26 +137,26 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>Égalité entre deux vecteurs (principe de translation): 
+                        <p><strong>Égalité entre deux vecteurs (principe de translation)</strong>
 \[ \overrightarrow u = \overrightarrow v \iff \Vert \overrightarrow u \Vert = \Vert \overrightarrow v \Vert \]</p>
-<p>Forme polaire: 
+<p><strong>Forme polaire</strong>
 \[ \overrightarrow u = \Vert \overrightarrow u \Vert,\theta_\overrightarrow u \]</p>
-<p>Forme matricielle (ou algébrique): 
-\[ \overrightarrow u = [\begin{array}{rr}u_x &amp; u_y\end{array}] \]</p>
-<p>Passer de la forme matricielle à la forme polaire: 
+<p><strong>Forme matricielle (ou algébrique)</strong>
+\[ \overrightarrow u = [\begin{array}{cc}u_x &amp; u_y\end{array}] \]</p>
+<p><strong>Passer de la forme matricielle à la forme polaire</strong>
 \[ \Vert \overrightarrow u \Vert = \sqrt{u_x^2 + u_y^2} \]
 \[ \theta_\overrightarrow u = \begin{cases} \arctan\frac{u_y}{u_x} + \phi &amp; \text{si }  u_x \neq 0 
 \\ \frac{\pi}{2} \text{ ou } 90^\circ &amp; \text{si } u_x = 0 \text{ et } u_y \gt 0
 \\ \frac{3\pi}{2} \text{ ou } 270^\circ &amp; \text{si } u_x = 0 \text{ et } u_y \lt 0 
 \end{cases}\]</p>
-<p>Passer de la forme polaire à la forme matricielle: 
+<p><strong>Passer de la forme polaire à la forme matricielle</strong>
 \[ u_x = \Vert \overrightarrow u \Vert \times \cos \theta_\overrightarrow u \]
 \[ u_y = \Vert \overrightarrow u \Vert \times \sin \theta_\overrightarrow u \]</p>
-<p>Opérations sur les vecteurs:</p>
+<p><strong>Opérations sur les vecteurs</strong></p>
 <ul>
 <li>
 <p>Propriétés de l'addition dans les \( \mathbb{R},+ \)
-\[ \begin{array}{rr} 
+\[ \begin{array}{rl} 
 x + y \in \mathbb{R}        &amp; \text{fermeture}
 \\ x + y = y + x               &amp; \text{commutativité}
 \\ x + (y + z) = (x + y) + z   &amp; \text{associativité}
@@ -166,7 +166,7 @@ x + y \in \mathbb{R}        &amp; \text{fermeture}
 </li>
 <li>
 <p>Propriétés de la multiplication dans les \( \mathbb{R},\cdot \ \)
-\[ \begin{array}{rr} 
+\[ \begin{array}{rl} 
 x \cdot y \in \mathbb{R}                    &amp; \text{fermeture}
 \\ x \cdot y = y \cdot x                       &amp; \text{commutativité}
 \\ x \cdot (y \cdot z) = (x \cdot y) \cdot z   &amp; \text{associativité}
@@ -176,24 +176,87 @@ x \cdot y \in \mathbb{R}                    &amp; \text{fermeture}
 </li>
 <li>
 <p>Autres propriétés dans les \( \mathbb{R},+,\cdot \ \)
-\[ \begin{array}{rr} 
+\[ \begin{array}{rl} 
 x \cdot 0 = 0                               &amp; \text{0 est l'élément absorbant}
 \\ x \cdot (y + z) = x \cdot y + x \cdot z     &amp; \text{distributativité de la multiplication sur l'addition} \end{array}
 \]</p>
 </li>
 </ul>
-<p>Addition et soustraction algébrique (avec composantes): <br />
-\[\text{Soit} \overrightarrow v = [\begin{array}{rr}v_x &amp; v_y\end{array}] \text{ et} \overrightarrow u = [\begin{array}{rr}u_x &amp; u_y\end{array}], \text{ alors} \] \[ \overrightarrow v \pm \overrightarrow v = [\begin{array}{rr}v_x \pm u_x &amp; v_y \pm u_y\end{array}] \]</p>
+<p><strong>Addition et soustraction algébrique (avec composantes)</strong>
+\[ \text{Soit } \overrightarrow v = [\begin{array}{rr}v_x &amp; v_y\end{array}] \text{ et} \overrightarrow u = [\begin{array}{rr}u_x &amp; u_y\end{array}], \text{ alors} \] \[ \overrightarrow v \pm \overrightarrow v = [\begin{array}{rr}v_x \pm u_x &amp; v_y \pm u_y\end{array}] \]</p>
 <ul>
 <li>Propriétés de l'addition sur \( \mathbb{R^2},+ \ \)
-\[ \begin{array}{rr} 
+\[ \begin{array}{rl} 
 \overrightarrow u + \overrightarrow v \text{ est un vecteur}                                                                &amp; \text{fermeture}
 \\ \overrightarrow u + \overrightarrow v = \overrightarrow v + \overrightarrow u                                               &amp; \text{commutativité de + dans } \mathbb{R^2}
 \\ \overrightarrow u + (\overrightarrow v + \overrightarrow w) = (\overrightarrow u + \overrightarrow v) + \overrightarrow w   &amp; \text{associativité de + dans } \mathbb{R^2}
 \\ \overrightarrow u + \overrightarrow 0 = \overrightarrow 0 + \overrightarrow u = \overrightarrow u                           &amp; \overrightarrow 0 \text{ est élément neutre de +}
-\\ \overrightarrow u + (-\overrightarrow u)                                                                                   &amp; \text{inverse additif, } -\overrightarrow u \end{array}
+\\ \overrightarrow u + (-\overrightarrow u)                                                                                    &amp; \text{inverse additif, } -\overrightarrow u \end{array}
 \]</li>
 </ul>
+<p><strong>Relation de Chasles</strong>
+\[ \text{Soient } A \text{, } B \text{ et } C \text{ des points du plan, alors } \] \[ \overrightarrow {AB} + \overrightarrow {BC} = \overrightarrow {AC} \] </p>
+<p><strong>Multiplication par un scalaire</strong>
+\[ \text{Soit } k \in \mathbb{R} \text{ et } \overrightarrow u \text{ un vecteur, alors la } \textbf{ multiplication par un scalaire } k \textbf{ d'un vecteur } \overrightarrow u \text{ est: }  \] \[ k \cdot \overrightarrow u = [\begin{array}{rl}k \cdot u_x &amp; k \cdot u_y\end{array}] \] </p>
+<p><strong>Propriété de la multiplication par un scalaire</strong>
+\[ \text{Soit } k \in \mathbb{R} \text{ et } \overrightarrow u \text{ un vecteur, alors } \]
+\[ \begin{array}{c} 
+k \cdot \overrightarrow u \text{ est un vecteur;}
+\\ \Vert k \cdot \overrightarrow u \Vert =  \vert k \vert \cdot \Vert \overrightarrow u \Vert \text{;}
+\\ \text{le vecteur } k \cdot \overrightarrow u \text{ est parallèle au vecteur } \overrightarrow u \text{;}
+\\ \text{les vecteurs} \overrightarrow u \text{ et } k \cdot \overrightarrow u \text{ ont la même direction si } k \gt 0 \text{ et sont de direction contraire si } k \lt 0 \text{;}
+\\ 0 \cdot \overrightarrow u = \overrightarrow 0 \text{.}
+\end{array}
+\]</p>
+<p><strong>Théorème du parallélisme</strong>
+\[ \text{Soit } \overrightarrow u \text{,} \overrightarrow v \in \mathbb{R^2} \text{ et } \overrightarrow u \text{,} \overrightarrow v \neq \overrightarrow 0 \text{, alors } \] 
+\[ \overrightarrow u \parallel \overrightarrow v \iff \text{ tel que } k \cdot \overrightarrow u = \overrightarrow v \text{ ou } k \cdot \overrightarrow v = \overrightarrow u \text{.}\] </p>
+<p><strong>Autres propriété de la multiplication par un scalaire</strong>
+\[ \text{Soit } k \in \mathbb{R} \text{ et } \overrightarrow u \text{ un vecteur, alors } \]
+\[ \begin{array}{c} 
+1 \cdot \overrightarrow u = \overrightarrow u \text{;}
+\\ a \cdot \overrightarrow 0 = \overrightarrow 0 \text{;}
+\\ (ab)\overrightarrow u = a(b\overrightarrow u) \text{;}
+\\ (a + b)\overrightarrow u = a\overrightarrow u + b\overrightarrow u \text{;}
+\\ a(\overrightarrow u + \overrightarrow v) = a\overrightarrow u + a\overrightarrow v \text{;}
+\\ \text{si } \overrightarrow u \neq \overrightarrow 0 \text{, alors le vecteur } \frac{1}{\Vert \overrightarrow u \Vert} \cdot \overrightarrow u \text{ est un vecteur unitaire.}
+\end{array}
+\]</p>
+<p><strong>Combinaison linéaire</strong>
+\[ \text{Une } \textbf{combinaison linéaire } \text{de } n \text{ vecteurs } \overrightarrow u_1 \text{,} \overrightarrow u_2 \text{,...,} \overrightarrow u_n \text{est une expression de la forme} \]
+\[ a_1 \overrightarrow u_1 + a_2\overrightarrow u_2 + \text{...} + a_n \overrightarrow u_n \in \mathbb{R} \]</p>
+<p><strong>Produit scalaire</strong>
+\[ \text{Soit } \overrightarrow u \text{ et } \overrightarrow v \text{ deux vecteurs du plan. Le } \textbf{produit scalaire de } \overrightarrow u \textbf{ par } \overrightarrow v \text{, noté } \overrightarrow u \cdot \overrightarrow v \text{, est donné par} \]
+\[ \begin{array}{rcl} 
+\overrightarrow u \cdot \overrightarrow v &amp; = &amp; \Vert \overrightarrow u \Vert \cdot \Vert \overrightarrow v \Vert \cos{\theta_{\overrightarrow u,\overrightarrow v}} &amp; \text{, définition polaire}
+\\ &amp; = &amp; \overrightarrow u_x \overrightarrow v_x + \overrightarrow u_y \overrightarrow v_y &amp; \text{, définition algébrique}
+\end{array}
+\]</p>
+<ul>
+<li>Propriétés
+\[ \begin{array}{rl} 
+\overrightarrow u \cdot \overrightarrow v \in \mathbb{R} &amp; \text{non-fermeture} 
+\\ \overrightarrow u \cdot \overrightarrow v = \overrightarrow v \cdot \overrightarrow u &amp; \text{commutativitié de } \cdot \text{ sur } + \text{dans} \mathbb{R^2}
+\\ \overrightarrow u \cdot (\overrightarrow v + \overrightarrow w) = \overrightarrow u \cdot \overrightarrow v + \overrightarrow u \cdot \overrightarrow w &amp; \text{commutativitié de } \cdot \text{ sur } + \text{dans} \mathbb{R^2}
+\\ a (\overrightarrow u \cdot \overrightarrow v) = (a \overrightarrow u) \cdot \overrightarrow v = \overrightarrow u \cdot (a\overrightarrow v) &amp; \text{commutativitié de } \cdot \text{ sur } + \text{dans} \mathbb{R^2}
+\end{array}
+\]</li>
+</ul>
+<p><strong>Autres propriétées</strong>
+\[ \begin{array}{c} 
+\overrightarrow u \cdot \overrightarrow u = {\Vert \overrightarrow u \Vert}^2 
+\\ \text{si } \overrightarrow u \neq \overrightarrow 0 \text{ et } \overrightarrow v \neq \overrightarrow 0 \text{, alors } \overrightarrow u \text{ et } \overrightarrow v \text{ sont perpendiculaires si } \overrightarrow u \cdot \overrightarrow v = 0 \text{.}
+\end{array}
+\]</p>
+<p><strong>Angle entre deux vecteurs</strong><br />
+L'angle entre deux vecteurs non-nuls du plan \( \overrightarrow u \) et \( \overrightarrow v \), noté \( \theta(\overrightarrow u\text{,}\overrightarrow v) \) par 
+\[ \theta(\overrightarrow u\text{,}\overrightarrow v) = \arccos{\frac{\overrightarrow u \cdot \overrightarrow v}{\Vert\overrightarrow u\Vert\cdot\Vert\overrightarrow v\Vert}} \text{.} \]</p>
+<p><strong>Projection orthogonale</strong><br />
+La projection orthogonale \( \overrightarrow u_\overrightarrow v \) est l'ombre d'un vecteur \( \overrightarrow u \) sur un vecteur \( \overrightarrow v \)</p>
+<p>\[ \overrightarrow u_\overrightarrow v = \frac{\overrightarrow u \cdot \overrightarrow v}{{\Vert \overrightarrow v \Vert}^2} \cdot \overrightarrow v \text{.} \]</p>
+<p><strong>Barycentre</strong>
+Le point \( P \) est le barycentre d'un ensemble de \( n \) points \( P_1,P_2,...,P_n \) si
+\[ \overrightarrow PP_1 + \overrightarrow PP_2 + ... + \overrightarrow PP_n = \overrightarrow 0 \]</p>
 
                     </main>
 
