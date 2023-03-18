@@ -1,4 +1,4 @@
-# A new technology [4/8/2022]
+# A new technology [04/08/2022]
 
 For years already, physicians and mathematicians have been searching for new technologies that could help us know more about ourselves. Some have been searching for links between Einstein’s general relativity and the string theory to predict the future and go back in it as others were searching to find a way to show more than a thousand million triangles to a screen in real-time. And they did it. What is the purpose you may ask? Well, imagine simulating an entire city out of the box. Imagine if we could visualize your future houses, neighbourhoods or even cities easily with this software, wouldn’t it be epic? Moreover, we could use this technology to create surprising environments for video games, with real time super realistic lighting and physics or even use it as an animation software to create very impressive movies for very low costs, compared to “old method” movies.
 
